@@ -9,7 +9,7 @@ You can use w,a,s,d to move around. There are forces acting on you such as gravi
 If you get hit by one of the other Spheres, the game stops. The game can be restarted by pressing "r".
 
 ## how to run
-See documentation.md
+See  [here](Documentation.md)
 
 ## Credit:
 based on a Water Ripple Coding challenge by Daniel Shiffmann (http://codingtra.in, https://youtu.be/BZUdGqeOD0w) which was itself based on https://web.archive.org/web/20160418004149/http://freespace.virgin.net/hugo.elias/graphics/x_water.htm
