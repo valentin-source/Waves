@@ -5,7 +5,7 @@ Simple 2D Flight Game (in pre-alpha) with funny physics simulation
 There currently isnt a Goal in the game yet. Not even a score to track how long you managed to survive🤷‍♂️
 
 ## how to play
-You can use w,a,s,d,SPACE to move around. There are forces acting on you such as gravity, wind.
+You can use w,a,s,d to move around. There are forces acting on you such as gravity, wind.
 If you get hit by one of the other Spheres, the game stops. The game can be restarted by pressing "r".
 
 ## how to run
