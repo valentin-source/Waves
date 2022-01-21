@@ -1,3 +1,3 @@
-#Waves
+# Waves
 
-###Code can be compiled and run using the Processing IDE ( https://www.processing.org )
+### Code can be compiled and run using the Processing IDE ( https://www.processing.org )
