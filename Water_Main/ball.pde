@@ -89,7 +89,7 @@ class Ball {
   }
 
   void interact() {
-    bg.previous[(int)this.pos.x][(int)this.pos.y] = sqrt(this.vel.x*this.vel.x + this.vel.y*this.vel.y);
+    bg.previous[(int)this.pos.x][(int)this.pos.y] =  sqrt(this.vel.x*this.vel.x + this.vel.y*this.vel.y);
   }
 
   void follow(int a, int b) {
@@ -100,27 +100,9 @@ class Ball {
     //line(pos.x, pos.y, a, b);
   }
 
-  void follow(int a, int b, boolean x) {
-    PVector tmp = new PVector(a-this.pos.x, b-this.pos.y);
-    this.vel.add(tmp.mult(gravity));
-    stroke(50,80,255);
-    strokeWeight(2);
-    //line(pos.x, pos.y, a, b);
-  }
-
   void follow(PVector other) {
-    //PVector tmp = new PVector(a-pos.x, b-pos.y);
     PVector tmp = new PVector(other.x, other.y);
-    this.vel.add(tmp.sub(this.pos).mult(acc));
-    stroke(50,80,255);
-    strokeWeight(2);
-    //line(pos.x, pos.y, other.x, other.y);
-  }
-
-  void follow(PVector other, boolean a) {
-    //PVector tmp = new PVector(a-pos.x, b-pos.y);
-    PVector tmp = new PVector(other.x, other.y);
-    this.vel.add(tmp.sub(this.pos).mult(gravity));
+    this.vel.add(tmp.sub(this.pos).normalize().mult(acc));
     stroke(50,80,255);
     strokeWeight(2);
     //line(pos.x, pos.y, other.x, other.y);

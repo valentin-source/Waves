@@ -5,3 +5,5 @@ Processing 4.0b2 was used to create the game, will probably work on all Processi
 
 
 The .exe File can also be used to test/ play the game, but you'll need the JDK 11 installed in order to run it.
+The .exe might also not always be up to date
+The Same applies to the Linux build
