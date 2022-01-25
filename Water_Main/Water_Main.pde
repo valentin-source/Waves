@@ -1,15 +1,12 @@
 Player player1;
 Background_Simulation bg;
 boolean gameStillRunning = true;
-
 ArrayList<Enemy> arr = new ArrayList<>();
-
-
-
-int intensity = 500;
+//int intensity = 500;
 int speed = 10;
 float Wavedampening = 0.995;
 public boolean[] keys;
+Scoreboard s;
 
 void gameSetup() {
   bg = new Background_Simulation();
@@ -20,8 +17,10 @@ void gameSetup() {
   }
   arr.clear();
   for (int i = 0; i < 4; i++) {
-    arr.add(new Enemy(random(width/4), random(height/4), 0, 0, random(10,30)));
+    arr.add(new EnemyWithConstantSpeed(random(width/4), random(height/4), 0, 0, random(250,750)));
+    arr.add(new Enemy(random(width/4), random(height/4), 0, 0, random(2,5)));
   }
+  s = new Scoreboard();
 }
 
 void setup() {
@@ -44,6 +43,7 @@ void draw() {
     }
     if (player1.collide(arr)) {
       gameStillRunning = false;
+      s.end(); //Score
     }
   } else {
     fill(255, 0, 0);
@@ -54,5 +54,6 @@ void draw() {
     text("press R to continue", 400, 480);
     textSize(30);
     text("Accelerate with w,a,s,d", 400, 520);
+    s.show();
   }
 }

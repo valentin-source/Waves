@@ -1,7 +1,5 @@
 class Enemy extends Ball {
   
-  
-
   Enemy(float xPos, float yPos, float xVel, float yVel, float div) {
     super( xPos,  yPos,  xVel, yVel, div);
     this.size = 8;

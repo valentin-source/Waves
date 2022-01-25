@@ -1,16 +1,18 @@
 
-void mouseDragged() {
+/*void mouseDragged() {
   bg.previous[mouseX][mouseY] = intensity;
 }
 void mousePressed() {
   //ball.following = !ball.following;
   bg.previous[mouseX][mouseY] = intensity;
 }
+*/
+
 
 void keyPressed() {
   if (key == CODED) {
-    if (keyCode == UP) intensity += 500;
-    if (keyCode == DOWN) intensity -= 500;
+    //if (keyCode == UP) intensity += 500;
+    //if (keyCode == DOWN) intensity -= 500;
   } else {
     if (key == 'w') keys[0] = true;
     if (key == 'a') keys[1] = true;
