@@ -9,6 +9,7 @@ You can use w,a,s,d to move around. There are forces acting on you such as gravi
 If you get hit by one of the other Spheres, the game stops. The game can be restarted by pressing "r".
 Red Spheres have constant acceleration -> Need to accelerate/ decelerate but have high maximum speeds.
 Yellow Spheres have a constant speed but relatively low maximum speed.
+Walls currently do not affect the player or the enemy and are simply a visual element for the Background
 
 ## how to run
 See  [Documentation.md](Documentation.md)
