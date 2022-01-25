@@ -33,12 +33,7 @@ class Background_Simulation {
           //pixels[index] = color(current[i][j]);
           //pixels[index] = color(map(current[i][j],-500,500, 0,255));
           pixels[index] = color(map(current[i][j],-500,500, 0,255));
-          /*if(Math.abs(current[i][j]) < 50) pixels[index] = color(122);
-          else {
-            if(current[i][j] >= 50) pixels[index] = color(map(current[i][j],0,500, 122,255), 0, 0);
-            else if(current[i][j] <= 50) pixels[index] = color(0,0,map(current[i][j],-500,0, 0,122));
-          }*/
-          
+         
       }
     }
     

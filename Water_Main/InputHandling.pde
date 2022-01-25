@@ -1,12 +1,13 @@
 
-/*void mouseDragged() {
-  bg.previous[mouseX][mouseY] = intensity;
+void mouseDragged() {
+  if (!gameStillRunning)
+    bg.previous[mouseX][mouseY] = 1000;
 }
 void mousePressed() {
-  //ball.following = !ball.following;
-  bg.previous[mouseX][mouseY] = intensity;
+  if (!gameStillRunning)
+    bg.previous[mouseX][mouseY] = 1000;
 }
-*/
+
 
 
 void keyPressed() {

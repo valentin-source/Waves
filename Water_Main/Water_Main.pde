@@ -7,6 +7,7 @@ int speed = 10;
 float Wavedampening = 0.995;
 public boolean[] keys;
 Scoreboard s;
+Wall wall1;
 
 void gameSetup() {
   bg = new Background_Simulation();
@@ -21,6 +22,7 @@ void gameSetup() {
     arr.add(new Enemy(random(width/4), random(height/4), 0, 0, random(2,5)));
   }
   s = new Scoreboard();
+  wall1 = new Wall(width/2,height/2,200,200);
 }
 
 void setup() {
@@ -33,6 +35,7 @@ void setup() {
 void draw() {
   
   bg.show();
+  wall1.show();
 
   if (gameStillRunning) {
     player1.update();
@@ -46,6 +49,8 @@ void draw() {
       s.end(); //Score
     }
   } else {
+    Wall banner = new Wall(width/2+50,height/2+50,550,300);
+    banner.show();
     fill(255, 0, 0);
     textSize(100);
     text("Game Over", width/2-200, height/2);
